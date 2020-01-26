@@ -1,0 +1,15 @@
+#include<iosteam>
+#include<conio.h>
+int main()
+{
+ clrscr();
+ int no;
+ cout<<"Enter any number\n";
+ cin>>no;
+ cout<<"Natural no from 1 to "<<no<<" is given below\n";
+ for(int i=1;i<=no;i++)
+ {
+ cout<<i<<" ";  	
+ }
+ getch();	
+}

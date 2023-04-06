@@ -1,0 +1,23 @@
+class Solution {
+  public:
+    int equalSum(int N, vector<int> &A) {
+        // code here
+        int sum=0;
+        
+        for(int i=0;i<N;i++){
+            sum+=A[i];
+        }
+        
+        int preSum=0;
+        
+        for(int i=0;i<N;i++){
+            preSum+=A[i];
+            
+            if(preSum-A[i]==sum-preSum){
+                return i+1;
+            }
+        }
+        
+        return -1;
+    }
+};
